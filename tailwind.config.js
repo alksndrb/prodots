@@ -22,6 +22,12 @@ module.exports = {
       },
       backgroundImage: {
         footer: "url('../../public/footer.jpg')",
+        banner: "url('../../public/banner.png')",
+        aboutBanner: "url('../../public/about-banner.jpg')",
+        businessBanner1: "url('../../public/business-banner-1.jpg')",
+        businessBanner2: "url('../../public/business-banner-2.jpg')",
+        contactBanner: "url('../../public/contact-banner.jpg')",
+        teamBanner: "url('../../public/team-banner.jpg')",
       },
     },
   },
