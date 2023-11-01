@@ -24,8 +24,10 @@ function AboutHU() {
   return (
     <main className="flex flex-col items-center justify-center pt-[100px]">
       <div className="h-[30vh] w-full bg-teamBanner bg-cover bg-primary"></div>
-      <section className="w-full sxl:w-[1160px] pt-10 pb-20 sm:pb-40 px-3 sxl:px-0 m-auto">
-        <h1 className="text-4xl font-semibold text-center">Csapat</h1>
+      <section className="w-full sxl:w-[1160px] py-6 sm:py-12 px-3 sxl:px-0 m-auto">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center">
+          Csapat
+        </h1>
         <TeamTile
           img={tolmasci.img}
           name={tolmasci.name}

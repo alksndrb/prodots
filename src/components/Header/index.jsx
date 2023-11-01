@@ -35,6 +35,9 @@ function Header() {
     setClick(!click);
     setBusinessClick(false);
   };
+  const toggleBusiness = () => {
+    setBusinessClick(!businessClick);
+  };
 
   const home = ["Home", "Kezdőlap", "Početna"];
   const about = ["About", "Rólunk", "O nama"];
@@ -49,8 +52,8 @@ function Header() {
   ];
 
   return (
-    <header className="w-full bg-light shadow-md fixed z-[100]">
-      <div className="w-full sxl:w-[1160px] py-3 px-3 sxl:px-0 m-auto flex items-center justify-between z-[100] bg-light shadow-md sm:shadow-none">
+    <header className="w-full h-[100px] bg-light shadow-md fixed z-[100]">
+      <div className="w-full h-[100px] sxl:w-[1160px] py-3 px-3 sxl:px-0 m-auto flex items-center justify-between z-[100] bg-light shadow-md sm:shadow-none">
         <Logo pathLang={pathLang} />
         {/* --- */}
         <button className="inline:block sm:hidden z-50" onClick={toggle}>
@@ -110,24 +113,40 @@ function Header() {
             {about[lang]}
           </Link>
           {/* --- */}
-          <div className="flex flex-col w-[90%] mx-auto py-0 text-center text-dark/50">
+          <div
+            className="flex flex-col w-[90%] mx-auto py-2 text-center"
+            onClick={toggleBusiness}
+            style={{
+              color: businessClick ? "gray" : "#1b1b1b",
+              borderBottom: businessClick
+                ? "none"
+                : "1px solid rgba(27, 27, 27, 0.5)",
+            }}
+          >
             {business[lang]}
           </div>
           {/*  */}
-          <Link
-            href={`/business/electronic-devices${pathLang}`}
-            className="w-[90%] mx-auto p-0 text-center"
-            onClick={toggle}
+          <div
+            className="flex-col"
+            style={{
+              display: businessClick ? "flex" : "none",
+            }}
           >
-            {electronicDevices[lang]}
-          </Link>
-          <Link
-            href={`/business/fmcg${pathLang}`}
-            className="w-[90%] mx-auto pb-2 text-center border-b border-dark/50"
-            onClick={toggle}
-          >
-            FMCG
-          </Link>
+            <Link
+              href={`/business/electronic-devices${pathLang}`}
+              className="w-[90%] mx-auto p-0 text-center"
+              onClick={toggle}
+            >
+              {electronicDevices[lang]}
+            </Link>
+            <Link
+              href={`/business/fmcg${pathLang}`}
+              className="w-[90%] mx-auto pb-2 text-center border-b border-dark/50"
+              onClick={toggle}
+            >
+              FMCG
+            </Link>
+          </div>
           <Link
             href={`/team${pathLang}`}
             className="w-[90%] mx-auto py-2 text-center border-b border-dark/50"

@@ -16,34 +16,31 @@ function FmcgSR() {
   let goodsElement = [];
   for (let i = 0; i < goods.length; i++) {
     goodsElement[i] = (
-      <li>
+      <li className="pb-3 sm:pb-5">
         <span className="font-semibold">{goodsName[i]}: </span>
         {goods[i]}
-        <br />
-        <br />
       </li>
     );
   }
   return (
     <main className="flex flex-col items-center justify-center pt-[100px]">
       <div className="h-[30vh] w-full bg-businessBanner1 bg-cover bg-primary"></div>
-      <section className="w-full sxl:w-[1160px] pt-10 pb-20 sm:pb-40 px-3 sxl:px-0 m-auto text-base lg:text-lg">
-        <h1 className="text-4xl font-semibold text-center">
+      <section className="w-full sxl:w-[1160px] py-6 sm:py-12 px-3 sxl:px-0 m-auto text-base lg:text-lg">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center pb-6 sm:pb-12">
           Roba Široke Potrošnje
         </h1>
-        <br />
-        <p>
+
+        <p className="pb-6 sm:pb-12">
           ProDots se bavi veleprodajom robe široke potrošnje (FMCG), nudeći
           raznolik asortiman proizvoda, uključujući kozmetiku, higijenske
           proizvode, parfeme, hemijske proizvode, sredstva za čišćenje i širok
           izbor premium brendova hrane.
         </p>
-        <br />
-        <h2 className="text-2xl font-semibold">Naša Ponuda:</h2>
-        <ul className="list-disc pl-5">
-          <br />
-          {goodsElement}
-        </ul>
+
+        <h2 className="text-xl sm:text-2xl font-semibold pb-6 sm:pb-12">
+          Naša Ponuda:
+        </h2>
+        <ul className="list-disc pl-5">{goodsElement}</ul>
       </section>
     </main>
   );

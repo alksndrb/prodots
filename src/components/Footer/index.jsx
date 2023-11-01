@@ -36,7 +36,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-footer bg-dark bg-bottom bg-cover ">
+    <footer className="bg-footer bg-dark bg-bottom bg-cover text-left">
       <div className="w-100% sxl:w-[1160px] sxl:mx-auto px-3 sxl:px-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10">
           <div className="col-span-1 flex  items-center justify-center sm:justify-start">

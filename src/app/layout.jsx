@@ -24,7 +24,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cx(pop.variable, inter.variable, "font-pop bg-light")}>
+      <body
+        className={cx(
+          pop.variable,
+          inter.variable,
+          "font-pop bg-light text-justify"
+        )}
+      >
         <Header />
         {children}
         <Footer />

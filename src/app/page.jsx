@@ -6,9 +6,8 @@ import HomeContact from "../components/Home/HomeContact";
 
 function Home() {
   const coverText = {
-    text1: "At ProDots,",
-    text2: "we don't just sell products",
-    text3: "we deliver excellence",
+    text1: "We don't just sell products",
+    text2: "we deliver excellence",
   };
   const aboutTile1 = {
     title: "Our Commitment",
@@ -30,6 +29,7 @@ function Home() {
     white: "Conect with Pro",
     orange: "Dots",
     link: "/contact",
+    heading: "Experience Innovation with ProDots - Explore Our Products Now!",
   };
   return (
     <main className="flex flex-col items-center justify-center pt-[100px]">

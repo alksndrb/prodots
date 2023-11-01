@@ -7,8 +7,8 @@ import React from "react";
 function HomeSR() {
   const coverText = {
     text1: "Gde Kvalitet i izbor",
-    text2: "",
-    text3: "zadovoljavaju Vaše Potrebe",
+
+    text2: "zadovoljavaju Vaše Potrebe",
   };
   const aboutTile1 = {
     title: "Kvalitet i Pouzdanost",

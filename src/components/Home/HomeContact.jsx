@@ -5,10 +5,10 @@ import Link from "next/link";
 
 function HomeContact({ contactText }) {
   return (
-    <section className="w-100% sxl:w-[1160px] my-40 sxl:mx-auto px-3  sxl:px-0">
-      <Link href={contactText.link} className="group">
+    <section className="w-100% sxl:w-[1160px] py-6 sm:py-12 sxl:mx-auto px-3  sxl:px-0">
+      <Link href={contactText.link} className="group ">
         <div
-          className=" p-1 sm:bg-gradient-to-r sm:from-primary/0 sm:to-50% sm:to-primary h-[250px] w-full
+          className=" sm:p-1 sm:bg-gradient-to-r sm:from-primary/0 sm:to-50% sm:to-primary h-[250px] w-full
           sm:group-hover:bg-primary 
           "
         >
@@ -26,7 +26,7 @@ function HomeContact({ contactText }) {
               alt="img"
             />
             <h3
-              className="text-light sm:text-dark absolute bottom-1/2 translate-y-1/2 left-[20px] sm:left-[100px] text-3xl font-semibold
+              className="text-light sm:text-dark absolute bottom-1/2 translate-y-1/2 left-[20px] sm:left-[100px] text-2xl sm:text-3xl font-semibold
             sm:group-hover:text-light 
             "
             >

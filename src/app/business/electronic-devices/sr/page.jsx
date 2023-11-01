@@ -32,11 +32,9 @@ function ElectronicDevicesSR() {
   let devicesElement = [];
   for (let i = 0; i < devices.length; i++) {
     devicesElement[i] = (
-      <li>
+      <li className="pb-3 sm:pb-5">
         <span className="font-semibold">{devicesName[i]}: </span>
         {devices[i]}
-        <br />
-        <br />
       </li>
     );
   }
@@ -44,24 +42,23 @@ function ElectronicDevicesSR() {
   return (
     <main className="flex flex-col items-center justify-center pt-[100px]">
       <div className="h-[30vh] w-full bg-businessBanner1   bg-cover bg-primary"></div>
-      <section className="w-full sxl:w-[1160px] pt-10 pb-20 sm:pb-40 px-3 sxl:px-0 m-auto text-base lg:text-lg">
-        <h1 className="text-4xl font-semibold text-center">
+      <section className="w-full sxl:w-[1160px] py-6 sm:py-12 px-3 sxl:px-0 m-auto text-base lg:text-lg">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center pb-6 sm:pb-12">
           Elektronski Uređaji
         </h1>
-        <br />
-        <p>
+
+        <p className="pb-6 sm:pb-12">
           ProDots je kompanija koja se bavi trgovinom i veleprodajom
           elektronskih uređaja i opreme. Naša posvećenost kvalitetu i
           izvanrednim proizvodima nas izdvaja kao lidera u industriji. Takođe,
           vođeni smo inovacijama i snažnom posvećenošću isporuci izuzetnih
           elektronskih rešenja koja će zadovoljiti rastuće potrebe naših kupaca.
         </p>
-        <br />
-        <h2 className="text-2xl font-semibold">Naša Ponuda:</h2>
-        <ul className="list-disc pl-5">
-          <br />
-          {devicesElement}
-        </ul>
+
+        <h2 className="text-xl sm:text-2xl font-semibold pb-6 sm:pb-12">
+          Naša Ponuda:
+        </h2>
+        <ul className="list-disc pl-5">{devicesElement}</ul>
       </section>
     </main>
   );

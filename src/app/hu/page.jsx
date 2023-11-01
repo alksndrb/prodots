@@ -7,8 +7,8 @@ import React from "react";
 function HomeHU() {
   const coverText = {
     text1: "Ahol a minőség és a választék ",
-    text2: "",
-    text3: "találkozik az igényeivel.",
+
+    text2: "találkozik az igényeivel.",
   };
   const aboutTile1 = {
     title: "Minőség és Megbízhatóság",
