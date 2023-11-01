@@ -27,7 +27,7 @@ function HomeContact({ contactText }) {
             />
             <h3
               className="text-light sm:text-dark absolute bottom-1/2 translate-y-1/2 left-[20px] sm:left-[100px] text-2xl sm:text-3xl font-semibold
-            sm:group-hover:text-light 
+            sm:group-hover:text-light text-left
             "
             >
               {contactText.white}

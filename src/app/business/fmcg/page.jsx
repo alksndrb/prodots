@@ -4,7 +4,7 @@ function Fmcg() {
   const goods = [
     "We offer a wide array of cosmetics, hygienic product and fragrances, catering to various preferences and styles such as Nivea, Dove, Adidas, Fa, Garnier, OldSpice, etc.",
     "Our range of chemical goods includes products for both personal and industrial use, meeting safety and quality standards – Household chemistry such as AmbiPur, Ajax, Ariel, Calgon, Cif, Henkel, Lenor.",
-    "Keep your spaces clean and hygienic with our effective cleaning solutions - hygienic product such as Always, Blendamed, Colgate, Gilette, Johnson, Pantete, Axe, Rexona, Pampers, Shauma, Signal, Wilkinson.",
+    "Keep your spaces clean and hygienic with our effective cleaning solutions - hygienic product such as Always, Blendamed, Colgate, Gilette, Johnson, Pantene, Axe, Rexona, Pampers, Shauma, Signal, Wilkinson.",
     "We proudly distribute renowned food brands such as Milka, Nescafe, Orbit, Red Bull, and more, ensuring your customers have access to their favorites.",
   ];
   const goodsName = [
