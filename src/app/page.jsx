@@ -26,7 +26,7 @@ function Home() {
     link2: "/business/fmcg",
   };
   const contactText = {
-    white: "Conect with Pro",
+    white: "Connect with Pro",
     orange: "Dots",
     link: "/contact",
     heading: "Experience Innovation with ProDots - Explore Our Products Now!",
