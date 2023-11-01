@@ -123,7 +123,15 @@ function Header() {
                 : "1px solid rgba(27, 27, 27, 0.5)",
             }}
           >
-            {business[lang]}
+            <div className="flex items-center pl-5 justify-center">
+              {business[lang]}
+              <DownArrowIcon
+                className="h-3 lg:h-4 w-auto pl-2"
+                style={{
+                  display: businessClick ? "none" : "inline",
+                }}
+              />
+            </div>
           </div>
           {/*  */}
           <div
@@ -134,7 +142,7 @@ function Header() {
           >
             <Link
               href={`/business/electronic-devices${pathLang}`}
-              className="w-[90%] mx-auto p-0 text-center"
+              className="w-[90%] mx-auto pb-2 text-center"
               onClick={toggle}
             >
               {electronicDevices[lang]}
@@ -162,21 +170,21 @@ function Header() {
             {contact[lang]}
           </Link>
           <div className="flex items-center justify-center py-2">
-            <Link href={pathPage + "/"} onClick={toggle}>
+            <Link href={pathPage + "/"}>
               <Image
                 src={enFlag}
                 alt="langFlg"
                 className="px-2 h-[30px] w-auto"
               ></Image>
             </Link>
-            <Link href={pathPage + "hu"} onClick={toggle}>
+            <Link href={pathPage + "hu"}>
               <Image
                 src={huFlag}
                 alt="langFlg"
                 className="px-2 h-[30px] w-auto"
               ></Image>
             </Link>
-            <Link href={pathPage + "sr"} onClick={toggle}>
+            <Link href={pathPage + "sr"}>
               <Image
                 src={srFlag}
                 alt="langFlg"
@@ -209,6 +217,7 @@ function Header() {
               >
                 {electronicDevices[lang]}
               </Link>
+              <hr className="text-dark/50 w-[80%] mx-auto" />
               <Link
                 href={`/business/fmcg${pathLang}`}
                 className="p-2 hover:text-primary tranisition-all ease duration-200"
