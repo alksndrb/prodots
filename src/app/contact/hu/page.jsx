@@ -10,13 +10,11 @@ function ContactHU() {
         </h1>
 
         <p className="pb-3 sm:pb-6">
-          A ProDots megbízható választás elektronikai eszközök terén. Vegye fel
-          velünk a kapcsolatot még ma, és hagyja, hogy támogassuk az igényeinek
-          teljesítésében. A ProDots egyetlen helyen nyújtja elektronikai
-          eszközöket. Lépjen velünk kapcsolatba még ma, és fedezze fel, hogyan
-          segíthetjük az technológiai utazását és hozzájárulhatunk
-          növekedéséhez. Köszönjük, hogy a ProDots-ot választotta, ahol nem csak
-          elektronikát értékesítünk, hanem kiválóságot szállítunk.
+          A ProDots egyetlen helyen nyújtja elektronikai eszközöket. Lépjen
+          velünk kapcsolatba még ma, és fedezze fel, hogyan segíthetjük az
+          technológiai utazását és hozzájárulhatunk növekedéséhez. Köszönjük,
+          hogy a ProDots-ot választotta, ahol nem csak elektronikát
+          értékesítünk, hanem kiválóságot szállítunk.
         </p>
 
         <p className="pb-3 sm:pb-6">
