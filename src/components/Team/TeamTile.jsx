@@ -8,6 +8,8 @@ function TeamTile({ img, name, title, mail }) {
         src={img}
         className="h-[220px] sm:h-[150px] w-auto object-contain"
         alt="img"
+        width={220}
+        height={220}
       />
       <div className="flex flex-col items-center sm:items-start justify-center sm:pl-10 pt-6 sm:pt-12">
         <h3 className="text-xl sm:text-lg lg:text-xl text-center">
