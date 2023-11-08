@@ -1,22 +1,25 @@
 import React from "react";
 import img from "@/public/placeholder.jpg";
 import TeamTile from "@/src/components/Team/TeamTile";
+import imgTolmacsi from "@/public/tolmacsi.jpg";
+import imgBukvic from "@/public/bukvic.jpg";
+import imgGagic from "@/public/gagic.jpg";
 
 function AboutHU() {
-  const tolmasci = {
-    img: img,
+  const tolmacsi = {
+    img: imgTolmacsi,
     name: "Branislav Tolmacsi ",
     title: "Igazgatója és alapítója",
     mail: "branislav.tolmacsi@prodots.eu",
   };
   const bukvic = {
-    img: img,
+    img: imgBukvic,
     name: "Dejan Bukvic ",
     title: "Alapítója",
     mail: "dejan.bukvic@prodots.eu",
   };
   const gagic = {
-    img: img,
+    img: imgGagic,
     name: "Nikola Gagic ",
     title: "Alapítója",
     mail: "nikola.gagic@prodots.eu",
@@ -29,10 +32,10 @@ function AboutHU() {
           Csapat
         </h1>
         <TeamTile
-          img={tolmasci.img}
-          name={tolmasci.name}
-          title={tolmasci.title}
-          mail={tolmasci.mail}
+          img={tolmacsi.img}
+          name={tolmacsi.name}
+          title={tolmacsi.title}
+          mail={tolmacsi.mail}
         />
         <TeamTile
           img={bukvic.img}

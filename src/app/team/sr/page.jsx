@@ -1,22 +1,25 @@
 import React from "react";
 import img from "@/public/placeholder.jpg";
 import TeamTile from "@/src/components/Team/TeamTile";
+import imgTolmacsi from "@/public/tolmacsi.jpg";
+import imgBukvic from "@/public/bukvic.jpg";
+import imgGagic from "@/public/gagic.jpg";
 
 function AboutSR() {
-  const tolmasci = {
-    img: img,
+  const tolmacsi = {
+    img: imgTolmacsi,
     name: "Branislav Tolmači ",
     title: "Direktor i osnivač",
     mail: "branislav.tolmacsi@prodots.eu",
   };
   const bukvic = {
-    img: img,
+    img: imgBukvic,
     name: "Dejan Bukvić ",
     title: "Osnivač",
     mail: "dejan.bukvic@prodots.eu",
   };
   const gagic = {
-    img: img,
+    img: imgGagic,
     name: "Nikola Gagić ",
     title: "Osnivač",
     mail: "nikola.gagic@prodots.eu",
@@ -29,10 +32,10 @@ function AboutSR() {
           Tim
         </h1>
         <TeamTile
-          img={tolmasci.img}
-          name={tolmasci.name}
-          title={tolmasci.title}
-          mail={tolmasci.mail}
+          img={tolmacsi.img}
+          name={tolmacsi.name}
+          title={tolmacsi.title}
+          mail={tolmacsi.mail}
         />
         <TeamTile
           img={bukvic.img}

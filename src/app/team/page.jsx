@@ -1,8 +1,8 @@
 import TeamTile from "@/src/components/Team/TeamTile";
 import React from "react";
-import img from "@/public/placeholder.jpg";
-import imgTolmacsi from "@/public/tolmacsi.png";
-import imgBukvic from "@/public/bukvic.png";
+
+import imgTolmacsi from "@/public/tolmacsi.jpg";
+import imgBukvic from "@/public/bukvic.jpg";
 import imgGagic from "@/public/gagic.jpg";
 
 function About() {
