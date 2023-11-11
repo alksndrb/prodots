@@ -55,6 +55,12 @@ function Footer() {
                 <div className="col-span-1 flex items-end">
                   01-09-421060 <br />
                 </div>
+                <div className="col-span-1 sm:col-span-2 text-right text-primary">
+                  EU VAT:&nbsp;
+                </div>
+                <div className="col-span-1 flex items-end">
+                  HU32380136 <br />
+                </div>
                 {/* --- */}
                 <div className="col-span-1 sm:col-span-2 text-right text-primary">
                   <br />
