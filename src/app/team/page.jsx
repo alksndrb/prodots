@@ -5,24 +5,27 @@ import imgTolmacsi from "@/public/tolmacsi.jpg";
 import imgBukvic from "@/public/bukvic.jpg";
 import imgGagic from "@/public/gagic.jpg";
 
-function About() {
+function Team() {
   const tolmacsi = {
     img: imgTolmacsi,
     name: "Branislav Tolmacsi ",
     title: "Director and Co-founder",
     mail: "branislav.tolmacsi@prodots.eu",
+    linkedin: "https://linkedin.com/in/tolmaci",
   };
   const bukvic = {
     img: imgBukvic,
     name: "Dejan Bukvic ",
     title: "Co-founder",
     mail: "dejan.bukvic@prodots.eu",
+    linkedin: "https://linkedin.com/in/dejan-bukvić-23426829b",
   };
   const gagic = {
     img: imgGagic,
     name: "Nikola Gagic ",
     title: "Co-founder",
     mail: "nikola.gagic@prodots.eu",
+    linkedin: "https://linkedin.com/in/nikola-gagić-881b77198",
   };
   return (
     <main className="flex flex-col items-center justify-center pt-[100px]">
@@ -31,27 +34,38 @@ function About() {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center">
           Team
         </h1>
-        <TeamTile
-          img={tolmacsi.img}
-          name={tolmacsi.name}
-          title={tolmacsi.title}
-          mail={tolmacsi.mail}
-        />
-        <TeamTile
-          img={bukvic.img}
-          name={bukvic.name}
-          title={bukvic.title}
-          mail={bukvic.mail}
-        />
-        <TeamTile
-          img={gagic.img}
-          name={gagic.name}
-          title={gagic.title}
-          mail={gagic.mail}
-        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-10">
+          <div className="flex justify-center">
+            <TeamTile
+              img={tolmacsi.img}
+              name={tolmacsi.name}
+              title={tolmacsi.title}
+              mail={tolmacsi.mail}
+              linkedin={tolmacsi.linkedin}
+            />
+          </div>
+          <div className="flex justify-center">
+            <TeamTile
+              img={bukvic.img}
+              name={bukvic.name}
+              title={bukvic.title}
+              mail={bukvic.mail}
+              linkedin={bukvic.linkedin}
+            />
+          </div>
+          <div className="flex justify-center">
+            <TeamTile
+              img={gagic.img}
+              name={gagic.name}
+              title={gagic.title}
+              mail={gagic.mail}
+              linkedin={gagic.linkedin}
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
 }
 
-export default About;
+export default Team;

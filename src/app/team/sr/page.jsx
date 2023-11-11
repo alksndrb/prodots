@@ -11,18 +11,21 @@ function AboutSR() {
     name: "Branislav Tolmači ",
     title: "Direktor i osnivač",
     mail: "branislav.tolmacsi@prodots.eu",
+    linkedin: "https://linkedin.com/in/tolmaci",
   };
   const bukvic = {
     img: imgBukvic,
     name: "Dejan Bukvić ",
     title: "Osnivač",
     mail: "dejan.bukvic@prodots.eu",
+    linkedin: "https://linkedin.com/in/dejan-bukvić-23426829b",
   };
   const gagic = {
     img: imgGagic,
     name: "Nikola Gagić ",
     title: "Osnivač",
     mail: "nikola.gagic@prodots.eu",
+    linkedin: "https://linkedin.com/in/nikola-gagić-881b77198",
   };
   return (
     <main className="flex flex-col items-center justify-center pt-[100px]">
@@ -31,24 +34,35 @@ function AboutSR() {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-center">
           Tim
         </h1>
-        <TeamTile
-          img={tolmacsi.img}
-          name={tolmacsi.name}
-          title={tolmacsi.title}
-          mail={tolmacsi.mail}
-        />
-        <TeamTile
-          img={bukvic.img}
-          name={bukvic.name}
-          title={bukvic.title}
-          mail={bukvic.mail}
-        />
-        <TeamTile
-          img={gagic.img}
-          name={gagic.name}
-          title={gagic.title}
-          mail={gagic.mail}
-        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-10 gap-10">
+          <div className="flex justify-center">
+            <TeamTile
+              img={tolmacsi.img}
+              name={tolmacsi.name}
+              title={tolmacsi.title}
+              mail={tolmacsi.mail}
+              linkedin={tolmacsi.linkedin}
+            />
+          </div>
+          <div className="flex justify-center">
+            <TeamTile
+              img={bukvic.img}
+              name={bukvic.name}
+              title={bukvic.title}
+              mail={bukvic.mail}
+              linkedin={bukvic.linkedin}
+            />
+          </div>
+          <div className="flex justify-center">
+            <TeamTile
+              img={gagic.img}
+              name={gagic.name}
+              title={gagic.title}
+              mail={gagic.mail}
+              linkedin={gagic.linkedin}
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
