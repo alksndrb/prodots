@@ -38,30 +38,42 @@ function Footer() {
   return (
     <footer className="bg-footer bg-dark bg-bottom bg-cover text-left">
       <div className="w-100% sxl:w-[1160px] sxl:mx-auto px-3 sxl:px-0">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10">
-          <div className="col-span-1 flex  items-center justify-center sm:justify-start">
-            <div className="w-1/2">
+        <div className="grid grid-cols-1 sm:grid-cols-4 py-10">
+          <div className="col-span-1 flex items-center justify-center sm:justify-start">
+            <div className="w-[70%] sm:w-full pb-10 sm:pb-0">
               <LogoDark />
             </div>
           </div>
 
-          <div className="col-span-1 flex flex-col items-center justify-center">
-            <div className="text-light text-base lg:text-xl font-semibold">
-              <div className="grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-2">
-                <div className="col-span-1 text-right text-primary">
+          <div className="col-span-3 flex flex-col items-center justify-center">
+            <div className="text-light text-base sm:text-base lg:text-xl font-semibold">
+              <div className="grid grid-cols-2 sm:grid-cols-3">
+                {/* --- */}
+                <div className="col-span-1 sm:col-span-2 text-right text-primary">
+                  ProDots Import Export ID:&nbsp;
+                </div>
+                <div className="col-span-1 flex items-end">
+                  01-09-421060 <br />
+                </div>
+                {/* --- */}
+                <div className="col-span-1 sm:col-span-2 text-right text-primary">
+                  <br />
                   {addressLabel[lang]}:&nbsp;
                 </div>
-                <div className="col-span-3 sm:col-span-2 lg:col-span-1 w-3/4 sm:w-full">
+                <div className="col-span-1 w-3/4 sm:w-full">
+                  <br />
                   {address[lang]} <br />
                   <br />
                 </div>
-                <div className="col-span-1 text-right text-primary">
+                {/* --- */}
+                <div className="col-span-1 sm:col-span-2 text-right text-primary">
                   Email:&nbsp;
                 </div>
                 <div className="col-span-1">
                   office@prodots.eu <br />
                   <br />
                 </div>
+                {/* --- */}
               </div>
             </div>
           </div>
