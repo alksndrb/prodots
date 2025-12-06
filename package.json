@@ -7,11 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
     "flowbite": "^2.0.0",
-    "next": "14.0.0",
+    "next": "^15.5.7",
     "react": "^18",
     "react-dom": "^18"
   },
